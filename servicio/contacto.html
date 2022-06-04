@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <picture class="header__picture">
+                <a href="../index.html">
+                    <img  src="../assets/logo.JPG" alt="Logo de ropa">
+                </a>
+            </picture>
+            <ul class="navbar">
+                <li><a href="../seccion/mujer.html">Mujer</a> </li>
+                <li><a href="../seccion/hombre.html">Hombre</a> </li>
+                <li><a href="../seccion/bebe.html">Bebés</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="form-style-9" action="" method="get" enctype="text/plain">
+            <ul>
+                <li>
+                    <input type="text" id="userName" name="userName" required class="field-style field-split align-left" placeholder="Nombres" />
+                    <input type="email" id="userMail" name="userMail" required class="field-style field-split align-right" placeholder="Correo" />
+                
+                </li>
+                <li>
+                    <input type="text" id="userTelefono" name="userTelefono" class="field-style field-split align-left" placeholder="Teléfono" />
+                    <input type="date" name="date" class="field-style field-split align-right" id="date" min="1980-01-01" placeholder="Cumpleaños">
+                </li>
+                <li>
+                <textarea name="userBio" id="userBio" class="field-style" placeholder="Mensaje"></textarea>
+                </li>
+                <li>
+                    <input type="submit" value="Enviar" />            
+                </li>
+                <li>
+                    <span class="privacy-policy">
+                        <input type="checkbox" name="recibeinfo" id="recibeinfo" required>¿Acepta los términos de nuestra política?. 
+                        </span>
+                </li>
+                </ul>
+            <!-- <fieldset>
+                <legend>Info Personal</legend>
+                <div>
+                    <label for="userName">Nombre</label>
+                    <input class="field-style field-split align-left" type="text" id="userName" name="userName" required placeholder="Ingrese su nombre">
+                </div>
+                <div>
+                    <label for="userApellido">Apellido</label>
+                    <input type="text" id="userApellido" name="userApellido" required placeholder="Ingrese su apellido">
+                </div>
+                <div>
+                    <label for="date">Cumpleaños</label>
+                    <input type="date" name="date" id="date" min="1980-01-01">
+                </div>
+                <div>
+                    Genero
+                    <div>
+                        <label for="male">Varón</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                    </div>
+                    <div>
+                        <label for="female">Mujer</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                    </div>
+                </div>
+                <div>
+                    <label for="userMail">Su correo</label>
+                    <input type="email" id="userMail" name="userMail" required placeholder="Ingrese su email">
+                </div>
+                <div>
+                    <label for="recibeinfo">¿Desea recibir promociones?</label>
+                    <input type="checkbox" name="recibeinfo" id="recibeinfo">
+                </div>
+                <div>
+                    <label for="userBio">Comentarios</label>
+                    <textarea name="userBio" id="userBio" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+    
+            <div>
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="LIMPIAR DATOS">
+            </div> -->
+        </form>
+    </main>
+</body>
+</html>
