@@ -5,167 +5,183 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bebés</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/estilo.css">
-    <script src="https://kit.fontawesome.com/8e3afbb123.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav class="header__nav">
-            <picture class="header__picture">
-                <a href="../index.html">
-                    <img  src="../assets/logo.JPG" alt="Logo de ropa">
+    <header class="site-header">
+        <nav class="navbar fixed-top bg-dark navbar-dark bg-opacity-50 header__nav navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                    <img  src="../assets/logo.JPG" class="d-inline-block align-top header__nav__div-logo" alt="Logo de ropa">
                 </a>
-            </picture>
-            <ul class="navbar">
-                <li><a href="../seccion/mujer.html">Mujer</a> </li>
-                <li><a href="../seccion/hombre.html">Hombre</a> </li>
-                <li><a href="../servicio/contacto.html">Contacto</a></li>
-            </ul>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../seccion/mujer.html">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../seccion/hombre.html">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../servicio/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section class="contenedor text-center grid-padre">
-            <div class="hijo">
+    <main class="Productos container text-center mb-4 mt-4">
+        <section class="row">
+            <div class="items col-12 col-md-6 col-lg-4">
                 <h3>Vestido Safari</h3>
-                <img src="../assets/bebes/1.PNG" alt="Imagen-producto">
-                <p><strong>Características destacadas</strong> 
-                    <ul>
+                <img class="img-fluid" src="../assets/bebes/1.PNG" alt="vestido-mujer">
+                <p class="white-darker-hover"><strong>Características destacadas</strong>
+                    <ul class="d-flex flex-column cyan-lighter-hover">
                         <li><strong>Marca:</strong> Dave & Bella</li>
                         <li><strong>Tipo:</strong> Vestidos</li>
                         <li><strong>Material principal:</strong> Algodón</li>
                     </ul>
                 </p>
-                <a class="boton" href="">Comprar</a>
+                <button class="btn btn-success">Comprar</button>
             </div>
 
-            <div class="hijo">
+            <div class="items col-12 col-md-6 col-lg-4">
                 <h3>Casaca Bebé Unisex</h3>
-                <img src="../assets/bebes/2.PNG" alt="Imagen-producto">
-                <p><strong>Características destacadas</strong> 
-                    <ul>
+                <img class="img-fluid" src="../assets/bebes/2.PNG" alt="casaca-bebe">
+                <p class="white-darker-hover"><strong>Características destacadas</strong>
+                    <ul class="d-flex flex-column cyan-lighter-hover">
                         <li><strong>Marca:</strong> Mango Kids</li>
                         <li><strong>Tipo:</strong> Casacas</li>
                         <li><strong>Material principal:</strong> Algodón</li>
                     </ul>
                 </p>
-                <a class="boton" href="">Comprar</a>
+                <button class="btn btn-success">Comprar</button>
             </div>
 
-            <div class="hijo">
+            <div class="items col-12 col-md-6 col-lg-4">
                 <h3>Abrigo Niña</h3>
-                <img src="../assets/bebes/3.PNG" alt="Imagen-producto">
-                <p><strong>Características destacadas</strong> 
-                    <ul>
+                <img class="img-fluid" src="../assets/bebes/3.PNG" alt="abrigo-nina">
+                <p class="white-darker-hover"><strong>Características destacadas</strong>
+                    <ul class="d-flex flex-column cyan-lighter-hover">
                         <li><strong>Marca:</strong> Mango Kids</li>
                         <li><strong>Tipo:</strong> Casacas</li>
                         <li><strong>Material principal:</strong> Poliéster</li>
                     </ul>
                 </p>
-                <a class="boton" href="">Comprar</a>
+                <button class="btn btn-success">Comprar</button>
             </div>
 
-            <div class="hijo">
+            <div class="items col-12 col-md-6 col-lg-4">
                 <h3>Pantalón Bebé niño</h3>
-                <img src="../assets/bebes/4.PNG" alt="Imagen-producto">
-                <p><strong>Características destacadas</strong> 
-                    <ul>
+                <img class="img-fluid" src="../assets/bebes/4.PNG" alt="pantalon-bebe-nino">
+                <p class="white-darker-hover"><strong>Características destacadas</strong>
+                    <ul class="d-flex flex-column cyan-lighter-hover">
                         <li><strong>Marca:</strong> Mango Kids</li>
                         <li><strong>Tipo:</strong> Pantalones</li>
                         <li><strong>Material principal:</strong> Algodón</li>
                     </ul>
                 </p>
-                <a class="boton" href="">Comprar</a>
+                <button class="btn btn-success">Comprar</button>
             </div>
 
-            <div class="hijo">
+            <div class="items col-12 col-md-6 col-lg-4">
                 <h3>Set 6 pcs Bebe Niño</h3>
-                <img src="../assets/bebes/5.PNG" alt="Imagen-producto">
-                <p><strong>Características destacadas</strong> 
-                    <ul>
+                <img class="img-fluid" src="../assets/bebes/5.PNG" alt="set-pcs-nino-bebe">
+                <p class="white-darker-hover"><strong>Características destacadas</strong>
+                    <ul class="d-flex flex-column cyan-lighter-hover">
                         <li><strong>Marca:</strong> Pillin</li>
                         <li><strong>Tipo:</strong> Pack</li>
                         <li><strong>Material principal:</strong> Algodón</li>
                     </ul>
                 </p>
-                <a class="boton" href="">Comprar</a>
+                <button class="btn btn-success">Comprar</button>
             </div>
 
-            <div class="hijo">
+            <div class="items col-12 col-md-6 col-lg-4">
                 <h3>Chaqueta Bonded Bebe Niña</h3>
-                <img src="../assets/bebes/6.PNG" alt="Imagen-producto">
-                <p><strong>Características destacadas</strong> 
-                    <ul>
+                <img class="img-fluid" src="../assets/bebes/6.PNG" alt="chaqueta-bebe-nina">
+                <p class="white-darker-hover"><strong>Características destacadas</strong>
+                    <ul class="d-flex flex-column cyan-lighter-hover">
                         <li><strong>Marca:</strong> Pillin</li>
                         <li><strong>Tipo:</strong> Chaquetas</li>
                         <li><strong>Material principal:</strong> Poliéster</li>
                     </ul>
                 </p>
-                <a class="boton" href="">Comprar</a>
+                <button class="btn btn-success">Comprar</button>
             </div>
 
-            <div class="hijo">
-                <h3>Set de Buzo </h3>
-                <img src="../assets/bebes/7.PNG" alt="Imagen-producto">
-                <p><strong>Características destacadas</strong> 
-                    <ul>
+            <div class="items col-12 col-md-6 col-lg-4">
+                <h3>Set de Buzo</h3>
+                <img class="img-fluid" src="../assets/bebes/7.PNG" alt="set-buzo">
+                <p class="white-darker-hover"><strong>Características destacadas</strong>
+                    <ul class="d-flex flex-column cyan-lighter-hover">
                         <li><strong>Marca:</strong> Baby Club Chic</li>
                         <li><strong>Tipo:</strong> Conjuntos</li>
                         <li><strong>Material principal:</strong> Algodón</li>
                     </ul>
                 </p>
-                <a class="boton" href="">Comprar</a>
+                <button class="btn btn-success">Comprar</button>
             </div>
 
-            <div class="hijo">
-                <h3>Vestido Jean Bebe Niña </h3>
-                <img src="../assets/bebes/8.PNG" alt="Imagen-producto">
-                <p><strong>Características destacadas</strong> 
-                    <ul>
+            <div class="items col-12 col-md-6 col-lg-4">
+                <h3>Vestido Jean Bebe Niña</h3>
+                <img class="img-fluid" src="../assets/bebes/8.PNG" alt="vestido-jean-bebe-nina">
+                <p class="white-darker-hover"><strong>Características destacadas</strong>
+                    <ul class="d-flex flex-column cyan-lighter-hover">
                         <li><strong>Marca:</strong> Pillin</li>
                         <li><strong>Tipo:</strong> Vestidos</li>
                         <li><strong>Estilo:</strong> Primavera-Verano</li>
                     </ul>
                 </p>
-                <a class="boton" href="">Comprar</a>
+                <button class="btn btn-success">Comprar</button>
             </div>
-
         </section>
-        <hr>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/BnBrf2cBug0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       
+        <section class="mb-4 mt-4">
+            <div class="ratio ratio-21x9">
+                <iframe src="https://www.youtube.com/embed/BnBrf2cBug0" title="YouTube video" allowfullscreen></iframe>
+              </div>
+        </section>
     </main>
-    
-    <footer>
-        <div class="footer__div">
-            <table border="1">
+
+    <footer class="site-footer bg-gradient text-white text-center pt-4">
+        <div class="table-responsive">
+            <table class="table table-bordered border-light container">
                 <h4>Reservas por correo</h4>
-                <tr>
-                    <th>Reservar</th>
-                    <th>Dirección</th>
-                </tr>
-                <tr>
-                    <td>
-                        <address>
-                            <p>
-                                <a href="#">Erick</a>
-                            </p>
-                        </address>
-                    </td>
-                    <td>Calle Larco #283, Miraflores LIMA-PERÚ</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-warning bg-dark bg-opacity-25">Reservar con</th>
+                        <th scope="col" class="text-warning bg-dark bg-opacity-25">Dirección</th>
+                      </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th >
+                            <address>
+                                <a class="white-darker-hover" href="#">Erick</a>
+                            </address>
+                        </th>
+                        <th class="white-darker-hover">
+                            Calle Larco #283, Miraflores LIMA-PERÚ
+                        </th>
+                    </tr>
+                </tbody>
             </table>
-            <div class="redes-sociales text-center">
-                <h4>Redes Sociales</h4>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <div>
-                <p>Copyright &copy; 2021-2022 Style, todos los derechos reservados.</p>
-            </div> 
+          </div>
+        <h5>Redes Sociales</h5>
+        <div class="iconos">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj " crossorigin="anonymous "></script>
 </body>
 </html>
