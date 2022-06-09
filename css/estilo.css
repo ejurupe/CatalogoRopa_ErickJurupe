@@ -1,36 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700;1,900&family=Open+Sans&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,200;1,300;1,400&display=swap');
 
-html {
-    font-size: 62.5%;
-}
 
 *{
     margin: 0 auto;
     padding: 0;
-    font-size: 1.6rem;
-    line-height: 2;
+
 }
 
-h1 {
-    font-size: 4rem;
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
-h2,
-h3,
-h4 {
-    font-size: 2rem;
+h3, .tipoLetraContacto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.tipoLetraP{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.carousel-inner img {
+    max-height: 500px;
+}
+
+.carousel-indicators .active {
+    background-color: #3830a8;
+  }
+
+body{
+    background: rgb(33,88,77);
+    background: linear-gradient(90deg, rgba(33,88,77,1) 0%, rgba(100,186,250,1) 100%);
+
+}
+
+
+.header__nav{
+    background: rgb(0,36,28);
+    background: linear-gradient(90deg, rgba(0,36,28,1) 0%, rgba(58,125,178,1) 100%);
+}
+
+.header__nav__div-logo{
+    width: 50px;
+    height: 50px;
 }
 
 body{
     padding-top: 100px;
-    /*background-color: aliceblue;*/
-    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
 }
 
-/*Header*/
+  .clasefooter{  
+    width: 100%;
+    height: 15vh;
+    position: absolute;
+    margin-bottom: 0;
+}
 
+.site-footer {
+    width: 100%;
+    height: 150px;
+}
+
+.iconos a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.iconos a i:hover {
+    color: aqua;
+    transform: scale(1.1);
+    transition: ease-in-out .1s;
+}
+
+.white-darker-hover {
+    color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s; }
+  .white-darker-hover:hover {
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: #d9d9d9; }
+
+    .cyan-lighter-hover {
+        color: #2e2a29;
+        -webkit-transition: .4s;
+        transition: .4s; }
+      .cyan-lighter-hover:hover {
+        -webkit-transition: .4s;
+        transition: .4s;
+        color: #c7e2e6; }
+
+/*
 .header__nav{
-    /*background-color: rgba(169, 235, 245, 0.651);*/
     background: rgb(187,226,210);
     background: radial-gradient(circle, rgba(187,226,210,1) 0%, rgba(92,169,205,1) 100%);
     position: fixed;
@@ -62,8 +126,6 @@ list-style-type: none;
     position: absolute;
     width: 50px;
     top: 1rem;
-    /* top: 10px;
-    left: 30px; */
 }
 
 .header_div h1{    
@@ -73,7 +135,7 @@ list-style-type: none;
     font-weight: 400;
 }
 
-/*Main*/
+
 
 
 main {
@@ -102,7 +164,6 @@ border-radius: 15px;
 }
 
 
-/*Footer*/
 
 footer{  
     width: 100%;
@@ -265,7 +326,7 @@ table {
     text-align: left;
 }
 
-/*Seccion eccomerce*/
+
 
 @media (min-width: 768px) {
     .grid-padre {
@@ -280,3 +341,4 @@ table {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+*/
