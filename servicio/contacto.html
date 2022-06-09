@@ -5,91 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
     <header>
-        <nav class="header__nav">
-            <picture class="header__picture">
-                <a href="../index.html">
-                    <img  src="../assets/logo.JPG" alt="Logo de ropa">
+        <nav class="navbar fixed-top bg-dark navbar-dark bg-opacity-50 header__nav navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                    <img  src="../assets/logo.JPG" class="d-inline-block align-top header__nav__div-logo" alt="Logo de ropa">
                 </a>
-            </picture>
-            <ul class="navbar">
-                <li><a href="../seccion/mujer.html">Mujer</a> </li>
-                <li><a href="../seccion/hombre.html">Hombre</a> </li>
-                <li><a href="../seccion/bebe.html">Bebés</a> </li>
-            </ul>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../seccion/mujer.html">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../seccion/hombre.html">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../seccion/bebe.html">Bebés</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <form class="form-style-9" action="" method="get" enctype="text/plain">
-            <ul>
-                <li>
-                    <input type="text" id="userName" name="userName" required class="field-style field-split align-left" placeholder="Nombres" />
-                    <input type="email" id="userMail" name="userMail" required class="field-style field-split align-right" placeholder="Correo" />
-                
-                </li>
-                <li>
-                    <input type="text" id="userTelefono" name="userTelefono" class="field-style field-split align-left" placeholder="Teléfono" />
-                    <input type="date" name="date" class="field-style field-split align-right" id="date" min="1980-01-01" placeholder="Cumpleaños">
-                </li>
-                <li>
-                <textarea name="userBio" id="userBio" class="field-style" placeholder="Mensaje"></textarea>
-                </li>
-                <li>
-                    <input type="submit" value="Enviar" />            
-                </li>
-                <li>
-                    <span class="privacy-policy">
-                        <input type="checkbox" name="recibeinfo" id="recibeinfo" required>¿Acepta los términos de nuestra política?. 
-                        </span>
-                </li>
-                </ul>
-            <!-- <fieldset>
-                <legend>Info Personal</legend>
-                <div>
-                    <label for="userName">Nombre</label>
-                    <input class="field-style field-split align-left" type="text" id="userName" name="userName" required placeholder="Ingrese su nombre">
-                </div>
-                <div>
-                    <label for="userApellido">Apellido</label>
-                    <input type="text" id="userApellido" name="userApellido" required placeholder="Ingrese su apellido">
-                </div>
-                <div>
-                    <label for="date">Cumpleaños</label>
-                    <input type="date" name="date" id="date" min="1980-01-01">
-                </div>
-                <div>
-                    Genero
-                    <div>
-                        <label for="male">Varón</label>
-                        <input type="radio" name="gender" id="male" value="male">
-                    </div>
-                    <div>
-                        <label for="female">Mujer</label>
-                        <input type="radio" name="gender" id="female" value="female">
-                    </div>
-                </div>
-                <div>
-                    <label for="userMail">Su correo</label>
-                    <input type="email" id="userMail" name="userMail" required placeholder="Ingrese su email">
-                </div>
-                <div>
-                    <label for="recibeinfo">¿Desea recibir promociones?</label>
-                    <input type="checkbox" name="recibeinfo" id="recibeinfo">
-                </div>
-                <div>
-                    <label for="userBio">Comentarios</label>
-                    <textarea name="userBio" id="userBio" cols="30" rows="10"></textarea>
-                </div>
-            </fieldset>
-    
-            <div>
-                <input type="submit" value="ENVIAR">
-                <input type="reset" value="LIMPIAR DATOS">
-            </div> -->
-        </form>
+
+    <main class="container mb-4 mt-4">
+        <h1>Formulario de contacto</h1>
+
+        <form class="row g-3">
+            <div class="col-md-3">
+              <label for="inputEmail4" class="form-label tipoLetraContacto">Nombres</label>
+              <input type="text" class="form-control border-warning border-2 rounded-3" id="inputEmail4" required placeholder="Nombres">
+            </div>
+            <div class="col-md-3">
+              <label for="inputPassword4" class="form-label tipoLetraContacto">Apellidos</label>
+              <input type="text" class="form-control border-warning border-2 rounded-3" id="inputPassword4" required placeholder="Apellidos">
+            </div>
+            <div class="col-6 mb-3">
+              <label for="inputAddress" class="form-label tipoLetraContacto">Email</label>
+              <input type="email" class="form-control border-warning border-2 rounded-3" id="inputAddress" required placeholder="name@example.com">
+            </div>
+            <div class="col-6 mb-3">
+              <label for="inputAddress2" class="form-label tipoLetraContacto">Dirección</label>
+              <input type="text" class="form-control border-warning border-2" id="inputAddress2" required placeholder="Dirección">
+            </div>
+            <div class="col-md-3">
+              <label for="inputCity" class="form-label tipoLetraContacto">Provincia</label>
+              <input type="text" class="form-control border-warning border-2 rounded-3" id="inputCity" required placeholder="Provincia">
+            </div>
+            <div class="col-md-3">
+              <label for="inputState" class="form-label tipoLetraContacto">Distrito</label>
+              <select id="inputState" class="form-select border-warning border-2 rounded-3" required>
+                <option selected></option>
+                <option value="1">Lima</option>
+                <option value="2">Jesús María</option>
+                <option value="3">Lince</option>
+                <option value="3">Ate</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input border-warning border-2 rounded-3" type="checkbox" id="gridCheck" required>
+                <label class="form-check-label tipoLetraContacto" for="gridCheck">
+                    ¿Acepta los términos de nuestra política?
+                </label>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <button type="submit" class="btn btn-success">Enviar</button>
+            </div>
+          </form>
     </main>
+
+    <footer class="site-footer bg-gradient text-white text-center pt-4">        
+        <h5>Redes Sociales</h5>
+        <div class="iconos">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj " crossorigin="anonymous "></script>
 </body>
 </html>
