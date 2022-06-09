@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>STYLE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar fixed-top bg-dark navbar-dark bg-opacity-50 header__nav navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img  src="./assets/logo.JPG" class="d-inline-block align-top header__nav__div-logo" alt="Logo de ropa">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./seccion/mujer.html">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./seccion/hombre.html">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./seccion/bebe.html">Bebés</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicio/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container text-center carousel-coder mb-4 mt-4">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="./assets/main_1.PNG" class="d-block w-100" alt="...">
+            </div>
+              <div class="carousel-item">
+                <img src="./assets/main_2.PNG" class="d-block w-100" alt="...">
+              </div>
+              
+              <div class="carousel-item">
+                <img src="./assets/main_4.PNG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev bg-dark bg-opacity-50" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next bg-dark bg-opacity-50" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div>
+            <div class="mb-4 mt-4">
+                <p class="white-darker-hover tipoLetraP">Es una tienda en lo que encuentras todo lo que estas buscando, ofrecemos nuevos estilos novedosos, de colores llamativos y de hermosos acabados
+                    <ul class="d-flex flex-column cyan-lighter-hover">
+                        <li>Vestidos </li>
+                        <li>Jeans </li>
+                        <li>Blusas </li>
+                        <li>Minifaldas </li>
+                        <li>Pantalones </li>
+                        <li>Ropa de bebés </li>
+                        <li>Y mucho más </li>
+                    </ul>                    
+                </p>                
+            </div>
+            <div>
+                <p class="white-darker-hover tipoLetraP">
+                    Búscanos y te darás cuenta que <strong>"STYLE"</strong>  ofrece un diferente estilo, estamos buscando una nueva versión de la moda en mujeres y varones. Además tenemos ofertas y todo esta al alcance de el cliente. Te esperamos en la Calle Larco #283 Miraflores
+                </p>
+            </div>
+          </div>
+    </main>
+
+    <footer class="site-footer bg-gradient text-white text-center pt-4">
+        <div class="table-responsive">
+            <table class="table table-bordered border-light container">
+                <h4>Reservas por correo</h4>
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-warning bg-dark bg-opacity-25">Reservar con</th>
+                        <th scope="col" class="text-warning bg-dark bg-opacity-25">Dirección</th>
+                      </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th >
+                            <address>
+                                <a class="white-darker-hover" href="#">Erick</a>
+                            </address>
+                        </th>
+                        <th class="white-darker-hover">
+                            Calle Larco #283, Miraflores LIMA-PERÚ
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        <h5>Redes Sociales</h5>
+        <div class="iconos">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj " crossorigin="anonymous "></script>
+</body>
+</html>
