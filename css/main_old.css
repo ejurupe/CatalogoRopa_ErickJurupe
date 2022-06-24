@@ -7,7 +7,7 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700; }
 
-.tipoLetraContacto, h3 {
+h3, .tipoLetraContacto {
   font-family: 'Roboto', sans-serif;
   font-weight: 500; }
 
@@ -20,10 +20,10 @@ body {
   background: linear-gradient(90deg, #21584d 0%, #64bafa 100%);
   padding-top: 100px; }
 
-header .header__nav {
+.header__nav {
   background: #00241c;
   background: linear-gradient(90deg, #00241c 0%, #3a7db2 100%); }
-  header .header__nav__div-logo {
+  .header__nav__div-logo {
     width: 50px;
     height: 50px; }
 
