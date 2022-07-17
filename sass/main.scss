@@ -21,6 +21,13 @@ header{
     }
 }
 
+main{
+    .div__ul-item{
+        display: flex;
+        flex-direction:  column;
+    }
+}
+
 .carousel-inner img {
     max-height: 500px;
 }
